@@ -46,7 +46,9 @@ pip install -r requirements.txt
 ```
 
 ### Train and Test
-The two-stage training and test are included in this script: 
+The two-stage training and test are included in train2.sh: 
+
+Change the data path and run this script:
 ```bash
 bash train2.sh
 ```
