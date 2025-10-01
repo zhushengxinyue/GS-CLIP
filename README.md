@@ -31,7 +31,11 @@ bash generate_dataset_json/generate_training_datasets_whole.sh
 ```
 
 ### Download Pretrained Weight
- Download the CLIP weights pretrained by OpenAI [[ViT-L-14-336.pt](https://openaipublic.azureedge.net/clip/models/3035c92b350959924f9f00213499208652fc7ea050643e8b385c2dac08641f02/ViT-L-14-336px.pt)] to ./pretrained_weights/
+ Download the CLIP weights pretrained by OpenAI [[ViT-L-14-336.pt](https://openaipublic.azureedge.net/clip/models/3035c92b350959924f9f00213499208652fc7ea050643e8b385c2dac08641f02/ViT-L-14-336px.pt)]
+
+ Download the PointNet++ initial weights at [here](https://github.com/yanx27/Pointnet_Pointnet2_pytorch/blob/master/log/sem_seg/pointnet2_sem_seg/checkpoints/best_model.pth) 
+ 
+ Put them to ./pretrained_weights/
 
 
 ### Create Environments
