@@ -11,7 +11,7 @@ Download the original dataset at
 [Mvtec3D-AD](https://www.mvtec.com/company/research/datasets/mvtec-3d-ad), [Eyecandies](https://eyecan-ai.github.io/eyecandies/), 
 [Real3D-AD](https://github.com/M-3LAB/Real3D-AD), [Anomaly-ShapeNet](https://github.com/Chopper-233/Anomaly-ShapeNet)
 
-The rendering and depth images of Anomaly-ShapeNet are avalible at [this](
+The rendering and depth images of Anomaly-ShapeNet are avalible at [here](https://pan.quark.cn/s/c71960a3c4cd).
 
 The rendering images of MVTecAD-3D, Eyecandies, and Real3D-AD are avalible at [this](https://github.com/zqhang/PointAD), 
 
