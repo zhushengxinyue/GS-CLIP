@@ -4,7 +4,7 @@
 Zero-shot 3D Anomaly Detection (ZS3DAD) is an emerging task that aims to detect anomalies in a target dataset without any target training data, which is particularly important in scenarios constrained by sample scarcity and data privacy concerns. While current methods leverage CLIP by projecting 3D point clouds into 2D images, they suffer from lost geometric details during projection and incomplete visual understanding due to their reliance on a single 2D representation. To address these limitations, we propose the Geometry-Aware Prompt and Synergistic View Representation Learning (GS-CLIP) framework, which enables the model to identify geometric anomalies through a two-stage learning process.In the first stage, we dynamically generate text prompts embedded with 3D geometric priors. These prompts contain global shape context and local defect information identified by our Geometric Defect Distillation Module (GDDM). In the second stage, we introduce a Synergistic View Representation Learning architecture that processes rendered and depth images in parallel. A Synergistic Refinement Module (SRM) subsequently fuses the features of both streams, capitalizing on their complementary strengths. Comprehensive experimental results on four large-scale public datasets show that GS-CLIP achieves state-of-the-art performance in both object-level and point-level metrics, validating the effectiveness of our proposed method.
 
 ## Overview
-![overview](3.JPG)
+![overview](3.png)
 
 ### Prepare Dataset
 Download the original dataset at 
