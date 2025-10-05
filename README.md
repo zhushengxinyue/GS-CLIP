@@ -1,7 +1,7 @@
-# GD-CLIP: Zero-shot 3D Anomaly Detection by Geometry-Aware Prompt and Dual-Stream Fusion
+# GS-CLIP: Zero-shot 3D Anomaly Detection by Geometry-Aware Prompt and Synergistic View Representation Learning
 
 ## Introduction
-Zero-shot 3D Anomaly Detection (ZS3DAD) is an emerging task that aims to detect anomalies in a target dataset without any target training data, which is particularly important in scenarios constrained by sample scarcity and data privacy concerns. Most existing methods leverage CLIP by projecting 3D point clouds into multi-view 2D images and then back-projecting the CLIP-based results onto the 3D space. However, this 3D-to-2D projection process inevitably results in the loss of critical geometric details, limiting the model's awareness of 3D geometric structures. Furthermore, existing methods typically rely on a single 2D representation, resulting in incomplete utilization of the available visual information. To address these limitations, we propose the Geometry-Aware Prompt and Dual-Stream Fusion (GD-CLIP) framework, which enables the model to identify geometric anomalies through a two-stage learning process. In the first stage, we use a 3D feature extractor to dynamically inject the global shape context and local defect information, identified by a designed Anomaly Point Aggregation Module (APAM), into text prompts. Such prompts provide direct geometric priors for the model to identify anomalies in 2D images. In the second stage, we introduce a LoRA-enhanced Dual-stream Fusion architecture that processes rendered and depth images in parallel. A Bidirectional Refinement Module (BRM) subsequently fuses the features of both streams, capitalizing on their complementary strengths. Comprehensive experimental results on four large-scale public datasets show that GD-CLIP achieves state-of-the-art performance in both object-level and point-level metrics, validating the effectiveness of our proposed method.
+Zero-shot 3D Anomaly Detection (ZS3DAD) is an emerging task that aims to detect anomalies in a target dataset without any target training data, which is particularly important in scenarios constrained by sample scarcity and data privacy concerns. While current methods leverage CLIP by projecting 3D point clouds into 2D images, they suffer from lost geometric details during projection and incomplete visual understanding due to their reliance on a single 2D representation. To address these limitations, we propose the Geometry-Aware Prompt and Synergistic View Representation Learning (GS-CLIP) framework, which enables the model to identify geometric anomalies through a two-stage learning process.In the first stage, we dynamically generate text prompts embedded with 3D geometric priors. These prompts contain global shape context and local defect information identified by our Geometric Defect Distillation Module (GDDM). In the second stage, we introduce a Synergistic View Representation Learning architecture that processes rendered and depth images in parallel. A Synergistic Refinement Module (SRM) subsequently fuses the features of both streams, capitalizing on their complementary strengths. Comprehensive experimental results on four large-scale public datasets show that GS-CLIP achieves state-of-the-art performance in both object-level and point-level metrics, validating the effectiveness of our proposed method.
 
 ## Overview
 ![overview](3.JPG)
@@ -40,8 +40,8 @@ bash generate_dataset_json/generate_training_datasets_whole.sh
 
 ### Create Environments
 ```bash
-conda create -n gdclip python=3.9
-conda activate gdclip
+conda create -n gsclip python=3.9
+conda activate gsclip
 pip install -r requirements.txt
 ```
 
