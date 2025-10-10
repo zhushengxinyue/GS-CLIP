@@ -53,4 +53,4 @@ Change the data path and run this script:
 bash train2.sh
 ```
 
-* We thank for the code repository: [PointAD](https://github.com/zqhang/PointAD), [AnoamlyCLIP](https://github.com/zqhang/AnoamlyCLIP)
+* We thank for the code repository: [PointAD](https://github.com/zqhang/PointAD), [AnomalyCLIP](https://github.com/zqhang/AnomalyCLIP)
