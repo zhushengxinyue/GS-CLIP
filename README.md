@@ -54,3 +54,14 @@ bash train2.sh
 ```
 
 * We thank for the code repository: [PointAD](https://github.com/zqhang/PointAD), [AnomalyCLIP](https://github.com/zqhang/AnomalyCLIP)
+
+## Citation
+If you find our work useful, please cite us. Thank you.
+```
+@article{deng2026gs,
+  title={GS-CLIP: Zero-shot 3D Anomaly Detection by Geometry-Aware Prompt and Synergistic View Representation Learning},
+  author={Deng, Zehao and Liu, An and Wang, Yan},
+  journal={arXiv preprint arXiv:2602.19206},
+  year={2026}
+}
+```
